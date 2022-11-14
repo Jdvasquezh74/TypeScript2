@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typescript1</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <style>
+      #Encabezado {
+        background-color:rgb(41, 165, 159);
+        padding-left:1%;
+        font-size:x-large;
+        font-weight:bold;
+      }
+      #Espaciado {
+        padding:25px;
+      }
+      #TablaGeneral {
+        background-color:lightgray;
+      }
+      #EncabezadoTabla{
+        background-color:white;
+      }
+      #TextoNegrilla {
+        font-weight:bold;
+      }
+      #TextoAzul {
+        color:rgb(51, 133, 181);
+      }
+      div.encabezado {
+        padding:2px;
+        background-color:rgb(41, 165, 159);
+      }
+      p.Pad{
+        padding-left:2%;
+      }
+      </style> 
+</head>
+<body>
+    <div class="encabezado">
+        <h3 id="Encabezado"> <img src="TVseries.png" alt="TV" width="40" height="auto"> TV Series</h3>
+    </div>
+    <div id="Espaciado" class="container">
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <table id = "TablaGeneral" class="table">
+                        <thead id="EncabezadoTabla">
+                        <tr>
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>Channel</th>
+                            <th>Seasons</th>
+                        </tr>
+                        </thead>
+                        <tbody id="series">
+
+                        </tbody>
+                    </table>
+                    <p id ="seasons-average" class="Pad"></p>
+                </div>
+            </div>
+            <div id="series-info" class="column">
+            </div>
+          </div>
+        </div>
+    </div>   
+    <script type="module" src="./scripts/series.js" ></script>
+    <script type="module" src="./scripts/data.js" ></script>
+    <script type="module" src="./scripts/main.js"></script>
+</body>
+</html>
